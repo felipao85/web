@@ -2,36 +2,117 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bienvenido</title>
+  <title>Presupuesto de Desarrollo Web</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-      padding-top: 100px;
+      margin: 40px;
+      background-color: #f9f9f9;
     }
     h1 {
+      text-align: center;
       color: #333;
-      font-size: 48px;
     }
-    p {
-      color: #555;
-      font-size: 20px;
-    }
-    .container {
+    .seccion {
       background-color: white;
-      padding: 40px;
-      margin: auto;
-      width: 50%;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+    .total {
+      font-weight: bold;
+      background-color: #def;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>¡Bienvenido!</h1>
-    <p>Gracias por visitar nuestra página web.</p>
+
+  <h1>Presupuesto: Sistema de Seguimiento de Vendedores</h1>
+
+  <div class="seccion">
+    <h2>1. Desarrollo Inicial</h2>
+    <p>Diseño y desarrollo del sistema web para seguimiento de vendedores con funcionalidades como:</p>
+    <ul>
+      <li>Inicio de sesión para administradores y vendedores</li>
+      <li>Panel de control con reportes de ventas</li>
+      <li>Registro y seguimiento de visitas o ventas por vendedor</li>
+      <li>Carga y gestión de clientes</li>
+      <li>Historial de actividades</li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Concepto</th>
+        <th>Descripción</th>
+        <th>Costo (USD)</th>
+      </tr>
+      <tr>
+        <td>Frontend</td>
+        <td>Diseño con HTML, CSS, JavaScript (React o Vue opcional)</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>Backend</td>
+        <td>API y base de datos (PHP/Laravel o Python/Flask, MySQL)</td>
+        <td>600</td>
+      </tr>
+      <tr class="total">
+        <td colspan="2">Total Desarrollo Inicial</td>
+        <td>1,000</td>
+      </tr>
+    </table>
   </div>
+
+  <div class="seccion">
+    <h2>2. Servicio Mensual de Mantenimiento</h2>
+    <p>Incluye:</p>
+    <ul>
+      <li>Soporte técnico</li>
+      <li>Backups semanales</li>
+      <li>Actualizaciones menores</li>
+      <li>Monitoreo del servidor y base de datos</li>
+    </ul>
+
+    <table>
+      <tr>
+        <th>Servicio</th>
+        <th>Descripción</th>
+        <th>Costo Mensual (USD)</th>
+      </tr>
+      <tr>
+        <td>Mantenimiento web</td>
+        <td>Monitoreo, soporte y ajustes técnicos</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Hosting y dominio</td>
+        <td>Incluye hosting en servidor confiable y dominio .com</td>
+        <td>20</td>
+      </tr>
+      <tr class="total">
+        <td colspan="2">Total Mensual</td>
+        <td>70</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="seccion">
+    <p><strong>Nota:</strong> Los valores pueden variar según necesidades específicas. Este es un presupuesto estimado. El desarrollo inicia con un 50% de anticipo.</p>
+  </div>
+
 </body>
 </html>
